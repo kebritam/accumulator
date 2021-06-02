@@ -35,7 +35,7 @@ public class Accumulators<T> {
      * You can use another static factory method.
      * Although because of performance concerns it's preferable to use this one.
      * @param wantedClass class that should be collected from repository class.
-     * @param arguments {@code Arguments} that should be passed to methods. Pass {@code null} if methods don't have argument.
+     * @param arguments {@code Arguments} that should be passed to methods. Pass {@code Arguments.NO_ARGS} if methods don't have argument.
      * @param repositoryClass class that implements {@code Accumulate} and contains requested return values.
      * @param <T> generic object type that should be collected from repository class.
      * @return instance of Accumulators
@@ -52,7 +52,7 @@ public class Accumulators<T> {
      * You can use this static method to create mono repository class {@code Accumulators}
      * but it's preferable to use the other one.
      * @param wantedClass class that should be collected from repository classes.
-     * @param arguments {@code Arguments} that should be passed to methods. Pass {@code null} if methods don't have argument.
+     * @param arguments {@code Arguments} that should be passed to methods. Pass {@code Arguments.NO_ARGS} if methods don't have argument.
      * @param accumulate first class that implements {@code Accumulate} and contains requested return values.
      * @param accumulates another classes that implement {@code Accumulate} and contain requested return values.
      * @param <T> generic object type that should be collected from repository class.

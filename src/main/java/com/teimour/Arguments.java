@@ -15,6 +15,11 @@ public class Arguments {
     private final List<Object> arguments;
 
     /**
+     * Use this constant for no-args methods.
+     */
+    public static final Arguments NO_ARGS = new Arguments(new ArgumentsBuilder());
+
+    /**
      * Constructs {@code Arguments} object with its builder.
      * @param builder {@link ArgumentsBuilder} builder class.
      */
